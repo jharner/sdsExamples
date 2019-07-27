@@ -1,0 +1,16 @@
+medium employees profit
+I 10 30
+I 14 18
+I 19 13
+I 25 6
+I 27 3
+II 21 24
+II 26 20
+II 31 7
+II 36 4
+II 41 -5
+III 34 17
+III 39 11
+III 43 3
+III 47 -6
+III 52 -10
