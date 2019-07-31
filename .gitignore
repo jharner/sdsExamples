@@ -1,0 +1,12 @@
+*.aux
+*.log
+*.out
+*.tex
+*.lst
+.*~
+.DS_Store
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+Rplots.pdf
