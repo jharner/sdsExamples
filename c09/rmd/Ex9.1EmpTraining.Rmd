@@ -1,0 +1,24 @@
+---
+title: "Ex9.1EmpTraining"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+To understand how a straight line is fitted to a set of data that consists of pairs of values obtained for two variables, we consider an overly simplified example. Imagine that an efficiency expert is investigating a possible linear relationship between the number of hours of instruction employees receive about a certain assembly procedure in a factory and the number of units they are able to produce per hour. The $x$ variable is fixed in this example.
+
+The following data are collected from nine employees:
+
+```{r}
+prod <- data.frame(hours = c(1, 1, 2, 4, 4, 5, 6, 6, 7),
+	units = c(3, 6, 4, 3, 6, 5, 9, 10, 8))
+attach(prod)
+```
+The least square line can now be superimposed on the scatter plot.
+```{r}
+prod.lm <- lm(units ~ hours)
+plot(hours, units, xlab="Hours of instruction", ylab="Units per hour")
+abline(prod.lm)
+```
